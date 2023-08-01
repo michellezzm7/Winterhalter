@@ -1,3 +1,119 @@
-body{
-	background-color: yellow;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Press+Start+2P&display=swap');
+body, html{
+	font-family: 'Open Sans', sans-serif;
+	padding: 0;
+	margin: 0;
 }
+
+h1{
+	font-weight: 800;
+	font-size: 50px;
+}
+
+h3{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+h4{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.wrapper{
+	width: 960px;
+	margin: 0 auto;
+
+}
+
+
+.hero-banner{
+	background-color: mediumpurple;
+	min-height: 100vh;
+	padding: 50px 20px;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+}
+
+.hero-banner h1{
+	color:white;
+	margin: 14px 0 20px;
+}
+
+.hero-banner h3{
+	color:white;
+	margin: 0 0 35px;
+}
+.hero-banner h4,
+.hero-banner h4 a{
+	color:white;
+	margin: 0;
+}
+
+.Empress_Elisabeth_of_Austria_with_diamond_stars_on_her_hair{
+	background: url(img/Empress_Elisabeth_of_Austria_with_diamond_stars_on_her_hair.jpg) no-repeat 0 0;
+	background-size: 100%;
+	width: 555px;
+	height: 855px;
+	position: absolute; top: 10%; right: 10%;
+	transform: rotate(15deg);
+}
+
+.Empress_Eugénie,_Hillwood_Museum,_1857{
+	background: url(img/Empress_Eugénie,_Hillwood_Museum,_1857.jpg) no-repeat 0 0;
+	background-size: 100%;
+	width: 800px;
+	height: 1020px;
+	position: absolute; top: 213px; right: 277px;
+}
+
+.Franz_Xaver_Winterhalter_Portrait_of_Madame_Barbe_de_Rimsky-Korsakov{
+	background: url(img/Franz_Xaver_Winterhalter_Portrait_of_Madame_Barbe_de_Rimsky-Korsakov.jpg) no-repeat 0 0;
+	background-size: 100%;
+	width: 533px;
+	height: 700px;
+	position: absolute; top: 74px; right: 109px;
+}
+
+a.cta,
+button.cta{
+	font-size: 30px;
+	font-weight: bold;
+	color:white;
+	background: mediumpurple;
+	display: inline-block;
+	box-shadow: 0 0 0 10px rgba(0, 0, 0, .15);
+	padding: 20px 30px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+a.cta.alt,
+button.cta.alt{
+	background-color: goldenrod;
+	color: black;
+	box-shadow: 0 0 0 10px rgba(0, 0, 0, .15);
+	
+
+	
+}
+
+/*
+
+<div class="hero-banner">
+	<div class="wrapper">
+		<h4>Michelle from <a href="https://michellezzm7.github.io/cartoon-hero/"> Galaxy</a> presents</h4>
+		<h1>Franz Xaver Winterhalter was a German painter &amp;<br/>
+		lithographer, known for his flattering portraits of royalty &amp;<br/>
+		upper-class society in the mid-19th century. </h1>
+		<h3>His name has become associated with <br/>
+		fashionable court portraiture.</h3>
+		<a class="cta alt" href="#more-info">Read More</a>
+	</div>
+	<div class="Empress_Elisabeth_of_Austria_with_diamond_stars_on_her_hair"></div>
+	<div class="Empress_Eugénie,_Hillwood_Museum,_1857"></div>
+	<div class="Franz_Xaver_Winterhalter_Portrait_of_Madame_Barbe_de_Rimsky-Korsakov"></div>
+</div>
+
+*/
