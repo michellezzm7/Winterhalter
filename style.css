@@ -7,7 +7,7 @@ body, html{
 
 h1{
 	font-weight: 800;
-	font-size: 50px;
+	font-size: 40px;
 }
 
 h3{
@@ -22,7 +22,7 @@ h4{
 
 .wrapper{
 	width: 960px;
-	margin: 0 auto;
+	margin: 0px 80px 0px 220px;
 
 }
 
@@ -54,27 +54,29 @@ h4{
 .Empress_Elisabeth_of_Austria_with_diamond_stars_on_her_hair{
 	background: url(img/Empress_Elisabeth_of_Austria_with_diamond_stars_on_her_hair.jpg) no-repeat 0 0;
 	background-size: 100%;
-	width: 555px;
-	height: 855px;
-	position: absolute; top: 10%; right: 10%;
+	width: 385px;
+	height: 625px;
+	position: absolute; top: 10%; right: 220px;
 	transform: rotate(15deg);
 }
 
-.Empress_Eugénie,_Hillwood_Museum,_1857{
-	background: url(img/Empress_Eugénie,_Hillwood_Museum,_1857.jpg) no-repeat 0 0;
+.Queen_Alexandra_when_Princess_of_Wales{
+	background: url(img/Queen_Alexandra_when_Princess_of_Wales.jpg) no-repeat 0 0;
 	background-size: 100%;
-	width: 800px;
-	height: 1020px;
-	position: absolute; top: 213px; right: 277px;
+	width: 302px;
+	height: 500px;
+	position: absolute; top: 6%; right: 31%;
 }
 
 .Franz_Xaver_Winterhalter_Portrait_of_Madame_Barbe_de_Rimsky-Korsakov{
 	background: url(img/Franz_Xaver_Winterhalter_Portrait_of_Madame_Barbe_de_Rimsky-Korsakov.jpg) no-repeat 0 0;
 	background-size: 100%;
-	width: 533px;
-	height: 700px;
-	position: absolute; top: 74px; right: 109px;
+	width: 333px;
+	height: 500px;
+	position: absolute; top: 44%; right: 23%;
 }
+
+
 
 a.cta,
 button.cta{
@@ -91,8 +93,8 @@ button.cta{
 
 a.cta.alt,
 button.cta.alt{
-	background-color: goldenrod;
-	color: black;
+	background-color: darkslateblue;
+	color: white;
 	box-shadow: 0 0 0 10px rgba(0, 0, 0, .15);
 	
 
@@ -112,7 +114,7 @@ button.cta.alt{
 		<a class="cta alt" href="#more-info">Read More</a>
 	</div>
 	<div class="Empress_Elisabeth_of_Austria_with_diamond_stars_on_her_hair"></div>
-	<div class="Empress_Eugénie,_Hillwood_Museum,_1857"></div>
+	<div class="Queen_Alexandra_when_Princess_of_Wales"></div>
 	<div class="Franz_Xaver_Winterhalter_Portrait_of_Madame_Barbe_de_Rimsky-Korsakov"></div>
 </div>
 
