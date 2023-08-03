@@ -10,6 +10,11 @@ h1{
 	font-size: 40px;
 }
 
+h2{
+	font-weight: 800;
+	font-size: 40px;
+}
+
 h3{
 	font-weight: bold;
 	font-size: 30px;
@@ -20,15 +25,25 @@ h4{
 	font-size: 20px;
 }
 
+p{
+	font-weight: bold;
+	font-size: 20px;
+	margin: 30px 0;
+}
+
 .wrapper{
 	width: 960px;
 	margin: 0px 80px 0px 220px;
 
 }
 
+.more-info .wrapper{
+	margin: 0px 80px 0px 400px;
+
+}
 
 .hero-banner{
-	background-color: mediumpurple;
+	background-color: #6c5792;
 	min-height: 100vh;
 	padding: 50px 20px;
 	box-sizing: border-box;
@@ -83,7 +98,7 @@ button.cta{
 	font-size: 30px;
 	font-weight: bold;
 	color:white;
-	background: mediumpurple;
+	background: #6c5792;
 	display: inline-block;
 	box-shadow: 0 0 0 10px rgba(0, 0, 0, .15);
 	padding: 20px 30px;
@@ -93,29 +108,72 @@ button.cta{
 
 a.cta.alt,
 button.cta.alt{
-	background-color: darkslateblue;
+	background-color: #7a9865;
 	color: white;
+	margin-top: 50px;
 	box-shadow: 0 0 0 10px rgba(0, 0, 0, .15);
-	
-
-	
 }
 
+nav{
+	height: 100px;
+	background-color: white;
+	box-shadow: 0 5px 8px rgba(0,0,0,.2);
+	position: sticky;
+	top: 0;
+}
+	
+
+nav .logo{
+	display: block;
+	width: 307px;
+	height: 40px;
+	position: absolute; top:45%; left: 0;
+	margin-top: -20px;
+	margin-left: 30px;
+	background: url(img/logo.png) no-repeat 0 0;
+	background-size: 100%;
+	overflow: hidden;
+	text-indent: -999px;
+}
+
+nav ul{
+	padding: 0;
+	margin: 0 20px 0 0;
+}
+
+nav ul li{
+	margin: 0;
+	padding: 0;
+	display: block;
+	float: right;
+}
+
+nav ul li a{
+	display: block;
+	height: 100%;
+	box-sizing: border-box;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	padding: 35px 10px;
+	line-height: 30px;
+}
+
+.more-info{
+	text-align: center;
+}
+
+
+
+
 /*
-
-<div class="hero-banner">
-	<div class="wrapper">
-		<h4>Michelle from <a href="https://michellezzm7.github.io/cartoon-hero/"> Galaxy</a> presents</h4>
-		<h1>Franz Xaver Winterhalter was a German painter &amp;<br/>
-		lithographer, known for his flattering portraits of royalty &amp;<br/>
-		upper-class society in the mid-19th century. </h1>
-		<h3>His name has become associated with <br/>
-		fashionable court portraiture.</h3>
-		<a class="cta alt" href="#more-info">Read More</a>
-	</div>
-	<div class="Empress_Elisabeth_of_Austria_with_diamond_stars_on_her_hair"></div>
-	<div class="Queen_Alexandra_when_Princess_of_Wales"></div>
-	<div class="Franz_Xaver_Winterhalter_Portrait_of_Madame_Barbe_de_Rimsky-Korsakov"></div>
+<div class="more-info" id="more-info">
+		<h2>Representive Works</h2>
+		<p>Among his best known works are <span class="highlight">Empress Eugénie Surrounded by her Ladies in Waiting (1855)</span> and the portraits he made of Empress Elisabeth of Austria (1865).</p>
+		<button class="cta">More Works by Winterhalter</button>
 </div>
-
 */
+
+
