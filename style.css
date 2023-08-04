@@ -27,7 +27,7 @@ h4{
 
 p{
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 30px;
 	margin: 30px 0;
 }
 
@@ -38,7 +38,13 @@ p{
 }
 
 .more-info .wrapper{
-	margin: 0px 80px 0px 400px;
+	margin: 0px 80px 0px 470px;
+
+}
+
+.history .wrapper{
+	width: 1200px;
+	margin: 0px 80px 0px 260px;
 
 }
 
@@ -104,6 +110,14 @@ button.cta{
 	padding: 20px 30px;
 	border-radius: 10px;
 	text-decoration: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+a.cta:active,
+button.cta:active{
+opacity: 0.7;
 }
 
 a.cta.alt,
@@ -120,6 +134,7 @@ nav{
 	box-shadow: 0 5px 8px rgba(0,0,0,.2);
 	position: sticky;
 	top: 0;
+	z-index: 1;
 }
 	
 
@@ -174,7 +189,7 @@ nav ul li a{
 }
 
 .highlight{
-	background-color: #6c5792;
+	background-color: #7a9865;
 	color: white;
 	padding: 5px 10px;
 	line-height: 50px;
@@ -183,13 +198,151 @@ nav ul li a{
 }
 
 
+.sep{
+	width: 470PX;
+	height: 10PX;
+	background-color: black;
+	margin: 100PX auto;
+}
+
+.history h3{
+	font-size: 40px;
+	font-weight: 800;
+}
+
+.history p{
+	margin: 30px 0 0 200px;
+}
+
+.nb-list{
+	width: 470px ;
+	padding: 20px 20px 0 20px;
+	box-sizing: border-box;
+	background-color: #EDEDED;
+	float: left;
+	margin: 0 20px 20px 200px;
+	position: relative;
+}
+
+.nb-list li{
+	height: 70px;
+	border-radius: 10px;
+	font-size: 40px;
+	color: white;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 20px;
+	padding: 6px 20px;
+	box-sizing: border-box;
+}
+
+.nb-list li.red{background-color: darkred;}
+.nb-list li.blue{background-color: skyblue;}
+.nb-list li.gray{background-color: lightgray;}
+.nb-list li.yellow{
+	background-color: lightyellow;
+	color: #111111;
+}
+.nb-list li.pink{background-color: hotpink;}
+.nb-list li.salmon{background-color: salmon;}
+
+.nb-list li.dragging{
+	position: absolute;
+	top: 90px;
+	left: 70px;
+	right: -30px;
+	transform: rotate(6deg) ;
+	box-shadow: 0 2px 14px rgba(0, 0, 0, 0.3);
+}
+
+.nb-list li.dragging:after{
+	content:'';
+	display: block;
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background: url(img/hand.jpg) no-repeat 0 0;
+	background-size: 100%;
+	bottom: -27px;
+	left: 66%;
+}
+
+
+.Empress-Eugenie{
+	display: block;
+	margin: 0 auto;
+}
+
+footer{
+	text-align: center;
+	color: rgba(0, 0, 0, .4);
+	font-size: 20px;
+	margin: 55px 0 55px;
+	font-weight: bold;
+}
+
+footer a{
+	color: rgba(0, 0, 0, .4);
+}
+
+.popup{
+	display: none;
+}
 
 /*
-<div class="more-info" id="more-info">
-		<h2>Representive Works</h2>
-		<p>Among his best known works are <span class="highlight">Empress Eugénie Surrounded by her Ladies in Waiting (1855)</span> and the portraits he made of Empress Elisabeth of Austria (1865).</p>
-		<button class="cta">More Works by Winterhalter</button>
-</div>
+	<div class="sep">
+	</div>
+	<div class="history" id="history">
+		<ul class="nb-list">
+			<li class="blue">Early years</li>
+			<li class="gray">&nbsp;</li>
+			<li class="yellow dragging">Court painter</li>
+			<li class="red">Last years</li>
+			<li class="pink">Style</li>
+			<li class="salmon">Selected artworks</li>
+			<li class="blue">Notes</li>
+			<li class="yellow">References</li>
+		</ul>
+		<h3>Left: Things We Find Important<br/>
+		Below: His Story</h3>
+		<p>Franz Xaver Winterhalter was born in the small village of Menzenschwand (now part of Sankt Blasien), in Germany's Black Forest in the Electorate of Baden, on 20 April 1805.</p>
+		<p>He was the sixth child of Fidel Winterhalter (1773–1863), a farmer and resin producer in the village, and his wife Eva Meyer (1765–1838), a member of a long established Menzenschwand family.</p>
+		<p>His father was of peasant stock and was a powerful influence in his life. Of the eight brothers and sisters, only four survived infancy.</p>
+		<p>Throughout his life Franz Xaver remained very close to his family, in particular to his brother Hermann (1808–1891), who was also a painter.</p>
+	</div>
+
+
+	<div class="sep">	
+	</div>
+	<img src="img/The_Empress_Eugenie_Surrounded_by_her_Ladies_in_Waiting.jpg" width="1280" height="888" alt="Empress Eugenie">
+	<footer>
+		Made by Michelle from <a href="https://michellezzm7.github.io/cartoon-hero/"> Galaxy</a>
+	</footer>
+	<div class="popup">
+		<div class="blanket"></div>
+		<div class="content"></div>
+			<h2>Fill in Your Details</h2>
+			<form action="">
+				<div class="item">
+					<label>Your First Name</label>
+					<input type="text" placeholder="Awesomeface" value="Michelle">
+				</div>
+				<div class="item">
+					<label>Your Last Name</label>
+					<input type="text" placeholder="Circleface">
+				</div>
+				<div class="item">
+					<label>Your Favorite Color</label>
+					<input type="text" placeholder="Pink">
+				</div>
+				<div class="item">
+					<label>Your Your Favorite Food</label>
+					<input type="text" placeholder="Apple Pie">
+				</div>
+				<button class="cta">I Want In!</button>
+			</form>
+			<button class="close">Close</button>
+	</div>
 */
 
 
