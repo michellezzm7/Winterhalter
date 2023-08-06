@@ -287,37 +287,108 @@ footer a{
 
 .popup{
 	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 2;
+	}
+
+.popup.show{
+	display: block;
+}
+
+.popup .blanket{
+	background-color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	
+}
+
+
+.popup .content{
+	box-sizing: border-box;
+	padding: 30px 40px;
+	width: 960px;
+	height: 500px;
+	background-color: white;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -480px;
+	margin-top: -250px;
+}
+
+.popup h2{
+	margin-top: 10px 0 20px;
+}
+
+.popup .cta{
+	margin: 35px;
+}
+
+.popup .close{
+	width: 60px;
+	height:60px;
+	background: #FF3300 url(img/close.png) no-repeat center center;
+	background-size: 40%;
+	position:absolute;
+	top: -30px;
+	right: -30px;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	overflow: hidden;
+	text-indent: -999px;
+	cursor: pointer;
+}
+
+.popup .row{
+
+}
+
+.popup .row:after{
+	content:'';
+	display: table;
+	clear: both;
+}
+	
+.popup .item{
+	float: left;
+	width: 415px;
+	margin-left: 40px;
+	text-align: left;
+}
+
+.popup .item:first-child{
+	margin-left: 0;
+}
+
+.popup .item label{
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.popup .item input[type='text']{
+	display: block;
+	font-size: 30px;
+	font-weight: bold;
+	border: 4px solid black;
+	height: 70px;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px 20px;
+
 }
 
 /*
-	<div class="sep">
-	</div>
-	<div class="history" id="history">
-		<ul class="nb-list">
-			<li class="blue">Early years</li>
-			<li class="gray">&nbsp;</li>
-			<li class="yellow dragging">Court painter</li>
-			<li class="red">Last years</li>
-			<li class="pink">Style</li>
-			<li class="salmon">Selected artworks</li>
-			<li class="blue">Notes</li>
-			<li class="yellow">References</li>
-		</ul>
-		<h3>Left: Things We Find Important<br/>
-		Below: His Story</h3>
-		<p>Franz Xaver Winterhalter was born in the small village of Menzenschwand (now part of Sankt Blasien), in Germany's Black Forest in the Electorate of Baden, on 20 April 1805.</p>
-		<p>He was the sixth child of Fidel Winterhalter (1773–1863), a farmer and resin producer in the village, and his wife Eva Meyer (1765–1838), a member of a long established Menzenschwand family.</p>
-		<p>His father was of peasant stock and was a powerful influence in his life. Of the eight brothers and sisters, only four survived infancy.</p>
-		<p>Throughout his life Franz Xaver remained very close to his family, in particular to his brother Hermann (1808–1891), who was also a painter.</p>
-	</div>
-
-
-	<div class="sep">	
-	</div>
-	<img src="img/The_Empress_Eugenie_Surrounded_by_her_Ladies_in_Waiting.jpg" width="1280" height="888" alt="Empress Eugenie">
-	<footer>
-		Made by Michelle from <a href="https://michellezzm7.github.io/cartoon-hero/"> Galaxy</a>
-	</footer>
 	<div class="popup">
 		<div class="blanket"></div>
 		<div class="content"></div>
